@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "../../context";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import { DownloadModal } from "@/components/Modal/downloadModal";
 import Analytics from "@/components/gAnalytics";
@@ -50,13 +50,13 @@ export default function RootLayout({
               <LeftSideBar />
               <div className="flex-1 min-w-[240px] max-w-[740px] h-fit border-l border-r border-border bg-background sm:bg-background pb-20 sm:pb-4">
                 {/* Only for mobile devices */}
-                <Titlebar />
+                {/* <Titlebar /> */}
                 {children}
               </div>
 
               <RightSideBar />
             </div>
-            <ToastContainer />
+            <ToastContainer transition={Slide} position="top-center" />
           </body>
         </AppProvider>
       </ThemeProvider>

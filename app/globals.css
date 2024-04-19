@@ -75,6 +75,22 @@
   }
 }
 
+:root {
+  --toastify-text-color-light: #000000 !important;
+  --toastify-text-color-dark: #ffffff !important;
+  --toastify-toast-width: 515px !important;
+}
+
+.Toastify__toast-body {
+  @apply text-sm leading-snug;
+}
+
+@layer components {
+  .center-item {
+    @apply flex justify-center items-center;
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

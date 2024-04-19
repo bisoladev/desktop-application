@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/files/**",
       },
+      {
+        protocol: "https",
+        hostname: "source.unsplash.com",
+        port: "",
+        pathname: "/random/**",
+      }, // TODO: remove this later. Only used for UI dev
     ],
   },
   //   output: "export",
